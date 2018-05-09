@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Polls from '@/components/Polls'
 import Index from '@/components/Index'
 
 Vue.use(Router)
@@ -14,8 +14,8 @@ export default new Router({
     },
     {
       path: '/polls/:id',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Polls',
+      component: Polls
     }
   ],
   mode: 'history'

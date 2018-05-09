@@ -45,7 +45,7 @@ export default {
   width:300px;
   height:100px;
   padding:10px 40px;
-  background:#448AFF;
+  background:#2196F3;
   color:#eaeaea;
   font-size:30px;
   border:none;

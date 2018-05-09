@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import ChartJS from 'chart.js'
 import App from './App'
 import router from './router'
 
