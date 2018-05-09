@@ -15,6 +15,7 @@
 </template>
 
 <script>
+import router from '../.././router'
 export default {
   name: 'Indexform',
   data () {
@@ -32,9 +33,12 @@ export default {
     },
     createPoll(){
       if(this.checkValid()){
-
+        const obj = {pollName: this.pollName, pollQuestion: this.pollQuestion, answers: this.answers.map(answer => answer.content), data: this.answers.map(answer => 1)}
+        this.axios.post('http://localhost:5000/createPoll', obj).then(response => {
+          router.push({ path: `/polls/${response.data}` });
+        });
       }else{
-        
+
       }
     },
     answerLast(id){

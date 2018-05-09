@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <h1>POLLING APPLICATION</h1>
+    <h1>POLLILIZER</h1>
   </div>
 </template>
 
